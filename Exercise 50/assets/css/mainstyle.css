@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(249, 198, 206);
+    border: 1px solid lightpink;
+    box-shadow: 0 0 4px rgb(255, 131, 149);
+    padding: 10px;
+}
+
+#main_header {
+    width: 400px;
+    margin: auto;
+}
+#main_header img {
+    width: 400px;
+}
+#main_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.date {
+    width: 80px;
+    margin: 0 8px;
+}
+.desc {
+    margin: 0 60px;
+}
+#meal {
+    width: 100px;
+}
+.amount {
+    width: 50px;
+    margin: 0 10px;
+}
