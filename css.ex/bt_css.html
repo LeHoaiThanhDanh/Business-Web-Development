@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox - EX1</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 20PX;
+      color: white;
+    }
+
+    .item {
+      flex: 1;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      flex-basis: 25%;
+    }
+
+    /* màu cho từng khối */
+    .item:nth-child(1) {
+      background-color: orange; /* vàng cam */
+    }
+    .item:nth-child(2) {
+      background-color: green; /* xanh lá */
+    }
+    .item:nth-child(3) {
+      background-color: red; /* đỏ */
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    /* mobile */
+    @media screen and (max-width: 750px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <h3>Product 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, rerum maiores? 
+        Enim, nesciunt earum facilis sunt et minus labore cumque perspiciatis, 
+        obcaecati, vero debitis quos quae sed sint sequi eius.
+      </p>
+    </div>
+    <div class="item">
+      <h3>Product 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <div class="item">
+      <h3>Product 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci... 
+        Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

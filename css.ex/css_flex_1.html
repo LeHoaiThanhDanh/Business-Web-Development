@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - EX1</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            padding: 5px;
+            flex:1
+        }
+        .item:nth-child(1){
+            order:2
+        }
+
+        .item:nth-child(2){
+            flex: 2
+        }
+        .item:nth-child(3){
+            order:3
+        }
+
+        /* mobile */
+        @media screen and (max-width: 750px){
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <H3>Column 1</H3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda repellat, architecto cumque iusto blanditiis, inventore maiores perferendis vitae consequatur quidem tempore! Porro natus a qui consectetur saepe. Quod, totam.</p>
+        </div>
+        <div class="item">
+            <H3>Column 2</H3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem dicta, illum officia illo ad pariatur sunt corporis quae autem sequi dignissimos iusto enim! Aut fuga deserunt tempora adipisci voluptatem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium illum, nisi culpa unde similique soluta suscipit dignissimos alias aperiam repellat facilis perferendis, aliquam at dolorum a. Recusandae a culpa consequuntur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique rerum, perferendis temporibus est consectetur aut deserunt. Nobis perferendis officiis, reiciendis aliquam quo commodi rem ipsam velit corrupti fugit quis!</P>
+        </div>
+        <div class="item">
+            <H3>Column 3</H3>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima corporis sit temporibus illum officiis nam alias vel ratione. Quae minima deleniti ratione veniam. Vitae, perspiciatis. Animi at hic cumque quis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eveniet distinctio sint tempore dolorum quisquam provident non placeat minus, magni alias, nihil temporibus quasi sapiente necessitatibus. Delectus repudiandae iste fugiat.</P>
+        </div>
+    </div>
+    
+</body>
+</html>

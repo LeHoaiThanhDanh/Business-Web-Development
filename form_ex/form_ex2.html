@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <style>
+        .form-container {
+            max-width: 600px;
+            background-color: orange;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .form-row {
+            padding: 8px 5px;
+            display: flex;
+        }
+        .form__input {
+            flex: 1;
+            min-width: 100px;
+        }
+        .form__label {
+            min-width: 80px;
+            text-align: left;
+        }
+        .form__button {
+            margin: 0 auto;
+            background-color: initial;
+            border: solid 1px rgb(92, 61, 4);
+            border-radius: 5px;
+        }
+        .form__button:hover {
+            background-color: rgb(92, 61, 4);
+            color: white;
+        } /* Trỏ chuột vào */
+        .form__button:active {
+            opacity: 0, 8;
+        } /* Click và giữ */
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="get">
+            <div class="form-row">
+                <label class="form__label" for="name">Username:</label>
+                <input class="form__input" type="text" name="name" value="iloveuel">
+            </div>
+            <div class="form-row">
+                <label class="form__label" for="email" >Email:</label>
+                <input class="form__input" type="email" name="email" value="iloveuel@uel.edu.vn">
+            </div>
+            <div class="form-row">
+                <input class="form__button" type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 16px;
+        } 
+        /* em trong body = 16px */
+        
+        .box2 {
+            border: solid 1px red;
+            font-size: 1.25em;
+        }
+        /* 1.25 * 16px= 20px */
+        .box2 p {
+            font-size: 0.8em;
+        }
+        /* 0.8*16px=12.8 (bị ảnh hưởng bởi .box2) */
+        /* khoảng cách với em cũng nhân theo cha */
+        .box2 {
+            padding: 1.5em;
+        }
+        /* 1.5*20px=30px */
+        .box2 .inner {
+            font-size: 1.2em;
+        }
+        /* 1.2*20px */
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>hello</p>
+    </div>
+    <div class="box2">
+        <p>
+            văn bản trong <i>.box2</i> dùng <strong>em</strong> nên phóng theo cha
+        </p>
+         <div class="inner">nội dung.inner tiếp tục nhân theo cấp cha.</div>
+    </div>
+   
+</body>
+</html>

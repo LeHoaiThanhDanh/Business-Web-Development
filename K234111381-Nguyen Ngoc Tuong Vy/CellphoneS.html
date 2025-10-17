@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Điện thoại Samsung Galaxy A70</title>
+  <style>
+    :root{
+      --red:#d70000;
+      --blue:#0a66c2;
+      --border:#dcdcdc;
+      --muted:#f7f7f7;
+    }
+    *{box-sizing:border-box}
+    body{font-family: Arial, Helvetica, sans-serif; margin:0; padding:20px; background:#fff; color:#222;}
+
+    /*LAYOUT 3 CỘT*/
+    .main{
+      display:grid; grid-template-columns: 1.2fr 1fr 1fr;
+      gap:20px; align-items:flex-start;
+    }
+
+    /*CỘT 1*/
+    .prod-hero{display:flex; justify-content:center; padding:8px 0 16px;}
+    .prod-hero img{width:100%; max-width:450px; height:auto;}
+    .similar{margin-top:12px; padding-top:14px; border-top:1px solid #eee;}
+    .similar h3{font-size:16px; margin:0 0 10px}
+    .grid{display:flex; gap:20px; flex-wrap:wrap;}
+    .card-mini{width:150px; text-align:center; font-size:14px;font-weight: bold;}
+    .card-mini img{width:120px; display:block; margin:0 auto 6px}
+    .price-red{color:var(--red); font-weight:bold}
+
+    /*CỘT 2*/
+    h2{margin:0; font-size:22px}
+    .price-lg{font-size:22px;font-weight:bold; color:var(--red); margin:10px 0}
+    .badge-orange {
+      display: inline-block;
+      background: #ff9800;   
+      color: #fff;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 12px;   
+    }
+    .promo{
+      background:var(--muted); border:1px solid var(--border);
+      border-radius:6px; padding:12px; margin-bottom:14px;
+    }
+    .promo b{display:block; margin-bottom:6px}
+    .promo-list{list-style:none; margin:0; padding:0;}
+    .promo-list li{
+      position:relative; padding-left:26px; margin:8px 0; color:#000; line-height:1.45;
+    }
+    .promo-list li::before{
+      content:""; position:absolute; left:0; top:2px; width:18px; height:18px;
+      background:url("/K234111381-Nguyen Ngoc Tuong Vy/images/check@2x.png") no-repeat center/18px 18px;
+    }
+    .promo-list li:first-child{color:var(--red);}
+    
+    .btn-buy {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      background: linear-gradient(#e60000, #a60000); /* đỏ gradient */
+      color: #fff;
+      padding: 12px 0;
+      border-radius: 4px;
+      margin-top: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    .btn-buy .btn-main {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .btn-buy .btn-sub {
+      font-size: 13px;
+      font-weight: normal;
+      display: block;
+      margin-top: 2px;
+    }
+    .gift-box {
+    border: 2px solid #d70000;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    }
+
+    .gift-box legend {
+      font-size: 13px;
+      font-weight: bold;
+      color: #fff;
+      background: #d70000;
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    .gift-box p {
+      margin: 6px 0 0 0;
+      line-height: 1.4;
+    }
+
+    .gift-box .check {
+      display: inline-block;
+      width: 16px; height: 16px;
+      background: url("/K234111381-Nguyen Ngoc Tuong Vy/images/check@2x.png") no-repeat center/16px 16px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    /*CỘT 3*/
+    .info-box{
+      background:#fff; border:1px solid var(--border); border-radius:6px;
+      padding:10px; margin-top:10px; font-size:14px; line-height:1.5;
+    }
+    .info-head{display:flex; align-items:center; gap:8px; margin-bottom:6px; font-weight:600;}
+    .info-head img{width:18px; height:18px}
+    .info-box a{color:var(--blue); text-decoration:none}
+    .info-box a:hover{text-decoration:underline}
+
+    .accessories{ margin-top:16px; }
+    .accessories h3{ margin:0 0 10px; font-size:16px; }
+    .acc-list{ display:flex; flex-direction:column; gap:12px; }
+    .acc-item{ display:flex; gap:10px; align-items:center; }
+    .acc-item img{
+      width:92px; height:92px; object-fit:cover; border:1px solid #eee; border-radius:4px;
+    }
+    .acc-item p{ margin:0; font-size:14px; line-height:1.35; }
+    .old{ text-decoration:line-through; color:#808080; font-size:13px; }
+    .off{ color:var(--red); font-size:12px; margin-left:6px; }
+
+    /*Responsive*/
+    @media(max-width:1000px){ .main{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <!--CỘT 1-->
+    <div>
+      <h2>Điện thoại Samsung Galaxy A70</h2>
+      <div class="prod-hero">
+        <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/galaxy-a70.png" alt="Samsung Galaxy A70">
+      </div>
+
+      <section class="similar">
+        <h3>So sánh với các sản phẩm tương tự</h3>
+        <div class="grid">
+          <div class="card-mini">
+            <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/samsung-galaxy-a70-white-400x400.jpg" alt="">
+            <div>Samsung Galaxy A70<br><span class="price-red">8.490.000đ</span></div>
+          </div>
+          <div class="card-mini">
+            <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/oppo-reno2-f-green-mtp-400x400.jpg" alt="">
+            <div>OPPO Reno2 F<br><span class="price-red">8.990.000đ</span></div>
+          </div>
+          <div class="card-mini">
+            <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/iphone-6s-plus-32gb-400x400.jpg" alt="">
+            <div>iPhone 6s Plus 32GB<br><span class="price-red">8.990.000đ</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--CỘT 2-->
+    <div>
+      <div class="price-lg">
+        9.290.000₫ <span class="badge-orange">Trả góp 0%</span>
+      </div>
+
+      <div class="promo">
+        <b>KHUYẾN MÃI</b>
+        <ul class="promo-list">
+          <li>Giảm thêm 3% (280.000đ) cho khách mua online có sinh nhật trong tháng 9.</li>
+          <li>Tặng suất mua Đồng hồ thời trang giảm ngay 40%, mắt kính giảm 20% (HSD: 7 ngày từ ngày mua hàng, không áp dụng KM khác).</li>
+          <li>Mua Loa kéo với gói giảm 15% (Loa mua kèm không áp dụng khuyến mãi khác).</li>
+        </ul>
+
+        <fieldset class="gift-box">
+          <legend><img src="/K234111381-Nguyen Ngoc Tuong Vy/images/icon-qua-tang@2x.png" width="15" height="15"> Mua online tặng thêm quà</legend>
+          <p><span class="check"></span> Phiếu mua hàng Samsung trị giá 150.000đ</p>
+        </fieldset>
+        
+        <p style="color:#d00000; margin:8px 0 0;">* Không áp dụng khi mua trả góp 0%</p>
+      </div>
+
+      <a href="#" class="btn-buy">
+        <span class="btn-main">MUA NGAY</span>
+        <span class="btn-sub">Giao hàng tận nơi hoặc nhận tại siêu thị</span>
+      </a>
+    </div>
+    
+
+    <!--CỘT 3-->
+    <div>
+      <div class="info-box">
+        <div class="info-head">
+          <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/trong-hop-co@2x.png" alt="Trong hộp có"> Trong hộp có
+        </div>
+        <div>
+          <a href="#">Sạc</a>, <a href="#">Tai nghe</a>, <a href="#">Sách hướng dẫn</a>,
+          <a href="#">Hộp</a>, <a href="#">Cây lấy sim</a>, <a href="#">Ốp lưng</a>, <a href="#">Cáp</a>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-head">
+          <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/bao-hanh-chinh-hang@2x.png" alt="Bảo hành"> Bảo hành chính hãng 12 tháng
+        </div>
+        <div>Sản phẩm được bảo hành theo chính sách chính hãng.</div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-head">
+          <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/1-doi-1@2x.png" alt="Đổi mới"> Lỗi là đổi mới trong 1 tháng
+        </div>
+        <div>Tại hơn 1800 siêu thị toàn quốc.</div>
+      </div>
+
+      <div class="info-box">
+        <a href="#">Samsung Galaxy A70 cũ</a><br>
+        Giá dưới: <span class="price-red">7.690.000đ</span><br/>Bảo hành tới 11.5 tháng
+      </div>
+
+      <section class="accessories">
+        <h3>Phụ kiện Samsung Galaxy A70</h3>
+        <div class="acc-list">
+          <div class="acc-item">
+            <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/tai-nghe-ep-awei-q29hi-den-hong-1-600x600.jpg" alt="Tai nghe EP Awei Q29Hi">
+            <div>
+              <p>Tai nghe EP Awei Q29Hi Đen Hồng</p>
+              <p><span class="price-red">105.000đ</span> <span class="old">150.000đ</span> <span class="off">Giảm 30%</span></p>
+            </div>
+          </div>
+          <div class="acc-item">
+            <img src="/K234111381-Nguyen Ngoc Tuong Vy/images/loa-bluetooth-icutes-mb-m818-cun-avatar-2-600x600.jpg" alt="Loa Bluetooth iCutes MB-M818 Cún">
+            <div>
+              <p>Loa Bluetooth iCutes MB-M818 Cún</p>
+              <p><span class="price-red">240.000đ</span> <span class="old">300.000đ</span> <span class="off">Giảm 20%</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .item {
+            flex: 1;
+            color: white;
+        }
+
+        .item:first-child {
+            background-color: darkred;
+        }
+
+        .item:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item:last-child div:nth-child(1) {
+            background-color: darkblue;
+            flex: 2;
+        }
+
+        .item:last-child div:nth-child(2) {
+            background-color: darkcyan;
+            flex: 1;
+        }
+
+        .item div {
+            padding: 10px;
+        }
+       
+        /*Tablet*/
+        @media (max-width: 750px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .item:nth-child(2) {
+            flex-direction: column-reverse;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non velit dolorem cupiditate sunt obcaecati minima ut saepe eaque inventore tenetur totam consectetur, explicabo ipsum ipsa facere dolores magnam vel laborum. </div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo et eius pariatur dicta saepe nostrum necessitatibus laborum odit at! Voluptate cumque, qui autem ducimus saepe nisi odit numquam facere laborum?</div>
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sequi beatae quaerat, deserunt minima labore velit eligendi id delectus quidem consequuntur accusamus odio? Voluptatum placeat quod esse, pariatur deleniti reprehenderit.</div>
+        </div>
+
+        <div class="item">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam totam natus id culpa omnis quae rerum, facilis iusto sunt. Praesentium quasi odio dolorum suscipit facilis eius! Necessitatibus, perferendis eaque.
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi perferendis aperiam sint aliquam! Facilis doloremque vero unde maxime similique autem corrupti quis quibusdam laborum, dolore ab, rem, voluptates odio odit?
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam totam natus id culpa omnis quae rerum, facilis iusto sunt. Praesentium quasi odio dolorum suscipit facilis eius! Necessitatibus, perferendis eaque.
+            </div>
+            
+        </div>
+          
+   
+    </div>
+</body>
+</html>

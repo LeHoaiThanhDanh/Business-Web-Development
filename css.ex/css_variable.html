@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css - Variable</title>
+    <style>
+        :root{
+            --mycolor: darkgreen;
+        } 
+        /* global */
+        p {
+            color: var(--mycolor)
+        }
+        h2{
+            --testcolor: red; /*local*/
+            color: var(--testcolor)
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome to UEL</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores dolorum rem cum veritatis porro ducimus doloremque deleniti repellendus fuga earum minima nostrum ipsam cumque a voluptas, laboriosam officia in.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat corrupti fugit facere nihil magnam veniam, voluptate exercitationem provident harum eius nesciunt repellendus delectus quae sapiente nostrum ullam commodi odio!</p>
+    <h2>Welcome to Vietnam</h2>
+</body>
+</html>

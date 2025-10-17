@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 26px;
+        }
+        body {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .card {
+            border: dashed 1px blue;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        /* Mobile */
+        @media (max-width: 750px) {
+           html {
+            font-size: 15px;
+           } 
+        } 
+    </style>
+</head>
+<body>
+    <h1>Dùng rem cho kích thước ổn định</h1>
+    <div class="card">
+        <p>Khoảng cách và chữ theo rem sẽ ổn định, không phụ thuộc cha</p>
+    </div>
+</body>
+</html>
